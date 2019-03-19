@@ -1,0 +1,33 @@
+﻿@model IEnumerable<ServicioWebTest2.Models.Disquera>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre_Disquera)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre_Disquera)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID_Disquera }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID_Disquera }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID_Disquera })
+        </td>
+    </tr>
+}
+
+</table>

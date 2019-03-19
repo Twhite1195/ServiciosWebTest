@@ -1,0 +1,26 @@
+﻿@model ServicioWebTest2.Models.Tipo_Bitacora
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Tipo_Bitacora</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo_Bitacora1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo_Bitacora1)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Cod_Tipo_Bitacora }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
